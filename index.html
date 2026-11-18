@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumeria Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Perfumeria Online</h1>
+        <p>¡Bienvenido a Perfumeria Online aqui podras encontrar perfumes en gran variedad!</p>
+        <div id="carrito">0 productos - $0.00</div>
+        <button id="btnCarrito" onclick="abrirCarrito()">Ver Carrito</button>
+    </header>
+
+    <div id="fondoCarrito" class="oculto" onclick="abrirCarrito()"></div>
+
+    <aside id="panelCarrito">
+        <div class="panel-header">
+            <h2> Tu carrito</h2>
+            <button onclick="abrirCarrito()">X</button>
+            </div>
+            <div id="listaCarrito"></div>
+            <div id="totalPanel"></div>
+    </aside>
+
+    <h1 class="creador">Creado por Luisito</h1>
+
+    <div class="filtros">
+        <button onclick="filtrarPerfumes(`todos`)">Todos</button> 
+        <button onclick="filtrarPerfumes(`diseñador`)">Diseñador</button> 
+        <button onclick="filtrarPerfumes(`arabes`)">Arabes</button> 
+        <button onclick="filtrarPerfumes(`nichos`)">Nichos</button>
+         </div>
+
+         <main id="perfumes"></main>
+
+         <script src="script.js"></script>
+</body>
+</html>
+
